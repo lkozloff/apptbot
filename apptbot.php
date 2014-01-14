@@ -1,10 +1,9 @@
 <?php
+$to= 'you@yourdomain.com';
+$from = 'noreply@yourdomain.com';
 
-//uncomment and fill out
-#$to= 'gbarnes@asianhope.org,lyle@asianhope.org';
-#$subject = 'appointments available!';
-#$from = 'noreply@services.asianhope.org';
-#$headers = "From:$from";
+$subject = 'appointments available!';
+$headers = "From:$from";
 
 
 $months = Array(1=>'Jan', 2=>'Feb', 3=>'Mar', 4=>'Apr', 5=>'May', 6=>'Jun', 7=>'Jul', 8=>'Aug', 9=>'Sep', 10=>'Oct', 11=>'Nov', 12=>'Dec');
