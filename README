@@ -1,0 +1,30 @@
+APPTBOT
+Author: Lyle Kozloff
+Date: 14-Jan-2014
+Description:
+The US Embassy in Bangkok is often booked several weeks in advance. New parents 
+wanting to get home often get 'stuck' in Bangkok waiting for an appointments.
+Some resort to obsessively checking the website in order to move their appointment
+up, others just accept their lot in life.
+
+APPTBOT is a simple script to check the US Embassy website for appointments and
+email you when one comes available.
+
+Requirements:
+- PHP5
+- CURL
+- sendmail
+
+Installation:
+- modify the to, from, subject and header variables
+- modify the month you want to check
+- set up a cron job to run apptbot.php at whatever interval you desire.
+- get home earlier than you would have otherwise!
+
+Future:
+It should be trivial to update for any country in the world. All US Embassies use the
+same appointment system. It would also not be difficult to modify for different 
+types of appointments.
+
+If one was so inclined, it would not be impossible to make and cancel appointments 
+with a similar (rough) approach as outlined here.
