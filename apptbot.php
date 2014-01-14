@@ -22,17 +22,22 @@ curl_setopt($ch, CURLOPT_COOKIEJAR, $cookie);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
 
+//establish a session
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_exec($ch);
 
+//make Bangkok the default embassy
 curl_setopt($ch, CURLOPT_URL, $url2);
 curl_exec($ch);
 
+//check the appointments!
 curl_setopt($ch, CURLOPT_URL, $url3);
 $res = curl_exec($ch);
 
+//count the number of Available slots
 $avail = substr_count($res, 'Available (');
 
+//only send an email if there are some appointments
 if($avail>0){
    $message = "$avail day(s) available this month! (".$months[$month].")\n\n";
    $message .= "Make a reservation:\n";
